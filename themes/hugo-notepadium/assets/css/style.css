@@ -632,7 +632,9 @@ strong {
 }
 
 .markdown-body li+li {
-  margin-top: 20px;
+  /* Edits: Akramz */
+  /*margin-top: 20px;*/
+  margin-top: 0px !important;
 }
 
 .markdown-body li> :first-child {

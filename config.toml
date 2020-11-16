@@ -21,7 +21,7 @@ unsafe = true  # enable raw HTML in Markdown
 [params]
 style = "light"  # default: auto. light: light theme, dark: dark theme, auto: based on system.
 logo = ""  # if you have a logo png
-slogan = "Ph.D. Student. Deep Learning, Climate Change, Low-Resource NLP."
+slogan = "Ph.D. Student. Interested in Computer Science, Machine Learning, and Climate Change."
 license = ""  # CC License
 
 [params.comments]

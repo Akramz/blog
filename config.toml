@@ -1,8 +1,8 @@
 baseURL = "http://www.akramz.space/"
 languageCode = "en-us"
 title = "Akram Zaytar"
-theme = "hugo-notepadium"
-copyright = "© 2020 Mohamed Akram Zaytar."
+theme = "cactus"
+copyright = "Akram Zaytar"
 enableRobotsTXT = true
 
 # Enable Disqus
@@ -11,18 +11,32 @@ disqusShortname = "akramz"
 # Google Analytics
 googleAnalytics = "UA-155244480-1"
 
-[markup.highlight]
-codeFences = true
-noClasses = false
-
-[markup.goldmark.renderer]
-unsafe = true  # enable raw HTML in Markdown
+[markup]
+    [markup.highlight]
+        codeFences = true
+        guessSyntax = false
+        hl_Lines = ""
+        lineNoStart = 1
+        lineNos = false
+        lineNumbersInTable = true
+        noClasses = true
+        style = "monokai"
+        tabWidth = 4
+    [markup.goldmark.renderer]
+        unsafe = true  # enable raw HTML in Markdown
 
 [params]
+tagsOverview = false
+colortheme = "white"
+showProjectsList = true
+projectsUrl = "https://github.com/akramz"
+description = "I'm currently working at IBM Research as an applied scientist. I am interested in GeoSpatial data science, machine learning, and applied computer vision."
 style = "light"  # default: auto. light: light theme, dark: dark theme, auto: based on system.
-logo = ""  # if you have a logo png
+logo = "https://i.imgur.com/978kCOa.png"  # if you have a logo png
 slogan = "Ph.D. Student. Interested in Computer Science, Machine Learning, and Climate Change."
 license = ""  # CC License
+rss = true
+mathjax = true
 
 [params.comments]
 enable = true  # En/Disable comments globally, default: false. You can always enable comments on per page.
@@ -66,3 +80,36 @@ gzip = false
 [[deployment.matchers]]
 pattern = "^.+\\.(html|xml|json)$"
 gzip = true
+
+# Main menu which appears below site header.
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "Blog"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "Tags"
+url = "/tags"
+weight = 3
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 4
+
+[[params.social]]
+name = "github"
+link = "https://github.com/akramz"
+
+[[params.social]]
+name = "email"
+link = "zaytarakram@gmail.com" # no need for "mailto:" at the start
+
+[[params.social]]
+name = "linkedin"
+link = "https://www.linkedin.com/in/akramz/"
